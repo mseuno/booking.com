@@ -1,0 +1,35 @@
+@CHARSET "UTF-8";
+.apllication{
+	margin: 0 auto;	
+	padding: 30px 0 40px;
+	 overflow: hidden;
+	
+	 margin-left: 10px 
+}
+.apllication #menu {
+	/*border: 1px solid black;*/
+	width: 15%;
+	height: inherit;
+	float: left;
+}
+.apllication #content {
+	/*border: 1px solid black;*/
+	width: 80%;
+	height: inherit;
+	float: right;
+	
+	
+}
+.apllication #new_app{
+	margin: 0 auto;	
+}
+
+.apllication #new_app thead {
+	font: bold;
+	
+}
+
+#add_to_block_list_btn{
+	position: relative;
+	left: 50px;
+}

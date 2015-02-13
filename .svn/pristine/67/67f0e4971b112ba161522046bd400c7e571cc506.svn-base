@@ -1,0 +1,68 @@
+#content {
+	background-color: #F2F4F8;
+    border-radius: 8px;
+    display: block;
+    margin: 1em auto;
+    max-width: 60%;
+    min-width: 50%;
+    padding: 1em;
+    text-align: left;
+    vertical-align: top;
+}
+
+span.star {
+	background-image: url(../../images/stars.png);
+	display: inline-block;
+	height: 16px;
+	width: 80px;
+	background-position: -80px -48px;
+}
+
+span.star-0 { background-position: -80px -48px; }
+span.star-1 { background-position: -64px -48px; }
+span.star-2	{ background-position: -48px -48px; }
+span.star-3	{ background-position: -32px -48px; }
+span.star-4	{ background-position: -16px -48px; }
+span.star-5	{ background-position: 0 -48px; }
+
+.hotel-item {
+	border-top: 1px dotted #779BCA;	
+	position: relative;
+	position: relative;
+}
+
+.hotel-logo, .hotel-info {
+	display: table-cell;
+	padding: 0.5em;
+	vertical-align: top;
+}
+
+.hotel-name {
+	margin-bottom: 0.1em; 
+}
+
+.hotel-name a {
+	text-decoration: none;
+	font-size: 1.2em;
+	color: #0896FF;
+}
+
+.hotel-name a:HOVER {
+	color: #FFCA56;
+}
+
+.hotel-location {
+	color: #669900;
+	font-style: italic;
+	padding: 0.1em;	
+}
+
+.cancel-btn {
+	position:absolute !important;
+	right: 10px;
+	top: 10px;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    font-size: 32px;
+}

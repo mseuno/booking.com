@@ -1,0 +1,62 @@
+
+#content {
+	background-color: #F2F4F8;
+    border-radius: 8px;
+    display: block;
+    margin: 1em auto;
+    max-width: 90%;
+    min-width: 70%;
+    padding: 1em;
+    text-align: left;
+    vertical-align: top;
+}
+
+.booking-element {
+	border-top: 1px dotted #779BCA;
+	margin: 0.5em;
+}
+
+.booking-element .hotel-name a{
+	color: #0896FF;
+    font-size: 1.2em;
+    text-decoration: none;
+}
+
+.booking-element .booking-dates {
+	margin: 0.2em;
+	font-style: italic;
+}
+
+.booking-element .booking-rooms table {
+	min-width: 50%;
+	text-align: center;
+	margin-left: 10%; 
+}
+
+.booking-element .booking-rooms th {
+	background-color: #537CB4;
+    padding: 6px 8px;
+    color: #FFFFFF;
+    font-weight: bold;
+    margin: 0;
+    padding: 3px 8px;
+    border-left: 1px solid #96B2D9;
+    vertical-align: top;
+    padding: 0.1em;
+}
+
+.booking-element .booking-rooms table td {
+	padding: 0.5em;
+}
+
+.booking-element .booking-rooms td.room-type{
+	color: #0896FF;
+    font-weight: bold;
+    width: 70%;
+}
+
+.booking-element .booking-rooms td.cost {
+ 	color: #339900;
+    font-weight: bold;
+    text-align: right;
+}

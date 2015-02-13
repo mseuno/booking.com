@@ -1,0 +1,255 @@
+
+
+#body #left{
+	width: 25%;
+	vertical-align: top;
+}
+
+#body #right{
+	width: 75%;
+	vertical-align: top;
+}
+
+/*  
+	search form styles ---------------------------------------------------------------------
+*/
+
+#body .main-search-form form {
+	background: -moz-linear-gradient(#FEBB02 0px, #FCA903 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+	background: -webkit-linear-gradient(#FEBB02 0px, #FCA903 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+	background: linear-gradient(#FEBB02 0px, #FCA903 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border: 1px solid #DAA300;
+    border-radius: 3px;
+    padding: 0.5em;
+}
+
+#body .main-search-form {
+	margin: 1em;
+    display: inline-block;
+    text-align: left;
+}
+
+#body .main-search-form h3 {
+	margin: 0;
+	font-size: 2em;
+	font-weight: lighter;
+}
+
+#body .main-search-form input {
+	color: #003580;
+	font-size: 0.8em;
+}
+
+#body .main-search-form .amount-of-hotels {
+	font-size: small;
+    margin-left: 0.5em;
+}
+
+#body .main-search-form .base-search-input {
+	padding: 0.5em 0;
+}
+
+#body .main-search-form .base-search-input .form-label {
+	
+}
+
+#body .main-search-form .base-search-input .input-form-field {
+	color: #003580;
+	font-size: 1.2em;
+	margin: 0.5em 0;
+	padding: 0.5em 0.2em;
+	width: 95%;
+}
+
+#body .main-search-form .date-selectors .home-in, 
+#body .main-search-form .date-selectors .home-out {
+	display: inline-block;
+	padding: 0.5em;
+}
+
+#body .main-search-form .count-selectors {
+	border-top: 1px solid #DA873A;
+	margin-top: 0.5em; 
+}
+
+#body .main-search-form .count-selectors .room-count,
+#body .main-search-form .count-selectors .people-count {
+	display: inline-block;
+	padding: 0.5em;
+}
+
+#body .main-search-form .button {
+	text-align: right;
+}
+
+#body .main-search-form .button .submit-search-btn {
+	background-color: #0896FF;
+    border: 0 none;
+    border-radius: 3px;
+    color: #FFFFFF;
+    font-size: 1.8em;
+    font-weight: bold;
+    margin: 0.3em;
+    padding: 0.2em 0.8em;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+#body .main-search-form .submit-search-btn:HOVER {
+	background-color: #003580;
+}
+
+#body .count-selectors select {
+    font-size: 0.8em;
+}
+
+/*  
+	search results styles ---------------------------------------------------------------------
+*/
+
+#body #search-results .hotel-item {
+	border-top: 1px dashed #779BCA;
+    clear: both;
+    display: block;
+    padding: 8px 0;
+    width: 100%;	
+    position: relative;
+    min-height: 8em;
+}
+
+#body #search-results .hotel-item:HOVER {
+	background-color: #F2F4F8;
+}
+
+#body #search-results .hotel-item .hotel-logo {
+	position: relative;
+	float: left;
+	margin: 1em;
+	z-index: 1;
+}
+
+#body #search-results .hotel-item .hotel-logo a {
+	text-decoration: none;	
+}
+
+#body #search-results .hotel-item .hotel-logo img {
+	max-width: 150px;	
+}
+
+#body #search-results .hotel-item .hotel-info {
+	position: relative;
+	margin: 0.5em;
+	padding-right: 10em;
+}
+
+#body #search-results .hotel-item .hotel-info .hotel-name {
+	 margin: 0.5em;
+}
+
+#body #search-results .hotel-item .hotel-info .hotel-name a {
+	color: #0896FF;
+	text-decoration: none;
+    font-size: 1.5em;
+}
+
+#body #search-results .hotel-item .hotel-info .hotel-name a:HOVER {
+	color: #FFCA56;
+}
+
+#body #search-results .hotel-item .hotel-info .hotel-location {
+	color: #669900;
+	cursor: pointer;
+	font-size: 1.1em;
+	padding: 0.5em;
+	display: inline;	
+}
+
+#body #search-results .hotel-item .hotel-info .hotel-description {
+	padding: 0.5em;
+}
+
+span.star {
+	background-image: url(../images/stars.png);
+	display: inline-block;
+	height: 16px;
+	width: 80px;
+	background-position: -80px -48px;
+}
+span.star-0 { background-position: -80px -48px; }
+span.star-1 { background-position: -64px -48px; }
+span.star-2	{ background-position: -48px -48px; }
+span.star-3	{ background-position: -32px -48px; }
+span.star-4	{ background-position: -16px -48px; }
+span.star-5	{ background-position: 0 -48px; }
+
+
+#body #search-results .book-it-btn {
+	background: none repeat scroll 0 0 #0896FF !important;
+    border: 2px solid #FFFFFF !important;
+    border-radius: 3px !important;
+    box-shadow: 0 0 3px #AAAAAA !important;
+    color: #FFFFFF;
+    font-size: 13px !important;
+    padding: 5px 10px !important;
+    position: absolute;
+    right: 0.5em;
+    text-decoration: none;
+    text-shadow: none !important;
+    top: 2em;
+}
+
+
+
+#right #search-results-header {
+	background: none repeat scroll 0 0 #FFEEC0;
+    border: 1px solid #FEBA02;
+    border-radius: 0.3em;
+    margin: 3px 0 6px;
+    position: relative;
+}
+
+#map-dialog {
+	display: none;
+	position: fixed;
+	box-shadow: 0 0 0 10px rgba(0, 0, 0, 0.45);
+	left: 50px;
+	right: 30px;
+	bottom: 30px;
+	top: 50px;
+	z-index: 999;
+}
+
+#map-dialog #close-map-btn {
+	background: url("../images/map-icons.png") no-repeat scroll -147px 0 rgba(0, 0, 0, 0);
+    cursor: pointer;
+    height: 24px;
+    position: absolute;
+    right: -16px;
+    top: -16px;
+    width: 24px;
+    z-index: 5;
+}
+
+#map-dialog #map-canvas {
+	display: block !important;
+	width: 100%;
+	height: 100%;
+}
+
+.location-map-pin {
+	background-image: url(../images/map-pin.png);
+	height: 26px;
+	width: 17px;
+	display: inline-block;
+}
+
+#search-results-header .show-map {
+	background-color: transparent;
+	color: #003580;
+	font-weight: bold;
+	float: right;
+}
+
+#search-results-header .show-map:HOVER {
+	color: #FEBB02;
+}

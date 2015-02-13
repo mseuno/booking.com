@@ -1,0 +1,161 @@
+#body .main-container {
+    text-align: center;
+}
+
+/*  
+	search for styles ---------------------------------------------------------------------
+*/
+
+#body .search-form form {
+	background: -moz-linear-gradient(#FEBB02 0px, #FCA903 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+	background: -webkit-linear-gradient(#FEBB02 0px, #FCA903 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+	background: linear-gradient(#FEBB02 0px, #FCA903 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border: 1px solid #DAA300;
+    border-radius: 3px;
+    padding: 0.5em;
+}
+
+#body .search-form {
+	margin: 1em;
+    max-width: 50%;
+    min-width: 45%;
+    display: inline-block;
+    text-align: left;
+}
+
+#body .search-form h3 {
+	margin: 0;
+	font-size: 2em;
+	font-weight: lighter;
+}
+
+#body .search-form input {
+	color: #003580;
+}
+
+#body .search-form .amount-of-hotels {
+	font-size: small;
+    margin-left: 0.5em;
+}
+
+#body .search-form .base-search-input {
+	padding: 0.5em 0;
+}
+
+#body .search-form .base-search-input .form-label {
+	
+}
+
+#body .search-form .base-search-input .input-form-field {
+	color: #003580;
+	font-size: 1.2em;
+	margin: 0.5em 0;
+	padding: 0.5em 0.2em;
+	width: 95%;
+}
+
+#body .search-form .date-selectors .home-in, 
+#body .search-form .date-selectors .home-out {
+	display: inline-block;
+	padding: 0.5em;
+}
+
+#body .search-form .count-selectors {
+	border-top: 1px solid #DA873A;
+	margin-top: 0.5em; 
+}
+
+#body .search-form .count-selectors .room-count,
+#body .search-form .count-selectors .people-count {
+	display: inline-block;
+	padding: 0.5em;
+}
+
+#body .search-form .button {
+	text-align: right;
+}
+
+#body .search-form .button .submit-search-btn {
+	background-color: #0896FF;
+    border: 0 none;
+    border-radius: 3px;
+    color: #FFFFFF;
+    font-size: 1.8em;
+    font-weight: bold;
+    margin: 0.3em;
+    padding: 0.2em 0.8em;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+#body .search-form .submit-search-btn:HOVER {
+	background-color: #003580;
+}
+
+/*  
+	rundom hotel list styles ---------------------------------------------------------------------
+*/
+ 
+#body .random-hotel-list {
+	background-color: #F2F4F8;
+    border-radius: 8px;
+    margin-bottom: 8px;
+    padding: 1em;
+    margin: 1em;
+    max-width: 45%;
+    min-width: 40%;
+    display: inline-block;
+    text-align: left;
+    vertical-align: top;
+}
+
+#body .random-hotel-list h3 {
+	margin: 0.5em 0;
+	font-size: 1.5em;
+	font-weight: lighter;
+}
+
+span.star {
+	background-image: url(../images/stars.png);
+	display: inline-block;
+	height: 16px;
+	width: 80px;
+	background-position: -80px -48px;
+}
+span.star-0 { background-position: -80px -48px; }
+span.star-1 { background-position: -64px -48px; }
+span.star-2	{ background-position: -48px -48px; }
+span.star-3	{ background-position: -32px -48px; }
+span.star-4	{ background-position: -16px -48px; }
+span.star-5	{ background-position: 0 -48px; }
+
+#body .random-hotel-list .hotel-item {
+	border-top: 1px dotted #779BCA;	
+}
+
+#body .random-hotel-list .hotel-logo, #body .random-hotel-list .hotel-info {
+	display: table-cell;
+	padding: 0.5em;
+	vertical-align: top;
+}
+
+#body .random-hotel-list .hotel-name {
+	margin-bottom: 0.1em; 
+}
+
+#body .random-hotel-list .hotel-name a {
+	text-decoration: none;
+	font-size: 1.2em;
+	color: #0896FF;
+}
+
+#body .random-hotel-list .hotel-name a:HOVER {
+	color: #FFCA56;
+}
+
+#body .random-hotel-list .hotel-location {
+	color: #669900;
+	font-style: italic;
+	padding: 0.1em;	
+}
+

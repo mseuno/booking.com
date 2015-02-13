@@ -1,0 +1,99 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%> 
+<%@ taglib uri="/WEB-INF/tags/bookingTag.tld" prefix="bk" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title><bk:printProperty key="admin.profile.title"/></title>
+	
+	<link rel="stylesheet" type="text/css" href="resources/css/main.css"/>
+	<link rel="stylesheet" type="text/css" href="resources/css/home.css"/>
+	
+	<script type="text/javascript">
+	function validateForm() {
+		var email = document.forms["form"]["email"].value;
+		var password = document.forms["form"]["password"].value;
+
+		if (email == "" || password == "") {
+			alert("You must fill in all of the required fields!");
+			return false;
+		}
+		return true;
+	}
+	</script>
+	
+</head>
+
+<body>
+<div class="wrapper">
+
+	<jsp:include page="/pages/header.jsp"></jsp:include>
+	
+	
+	<div id="body" style="margin-left: 10px ">
+	
+		<div id="menu" style="width: 200px; float: left;">
+			<jsp:include page="/pages/extranet/admin_cabinet/menu_admin.jsp"></jsp:include>
+		 </div>
+	 	 <div id="content" align="center">
+	 	 
+				<h2><bk:printProperty key="admin.profile.page_name"/></h2>
+				
+		<div>
+			<c:if test="${message != null}">
+				<font color="red">${message}</font>
+			</c:if>
+		</div>
+		
+		
+				<form action="adminprofile" method="post" name="form" onsubmit="return validateForm()">
+					<table>
+					
+						<tr>
+							<td><bk:printProperty key="admin.profile.first_name"/></td>
+							<td><input type="text" name="firstName" value="${user.firstName}" /></td>
+						</tr>
+						<tr>
+							<td> <bk:printProperty key="admin.profile.last_name"/></td>
+							<td><input type="text" name="lastName" value="${user.lastName}" /></td>
+						</tr>
+						
+						<tr>
+							<td><bk:printProperty key="admin.profile.emeil"/></td>
+							<td><input type="text" name="email" value="${user.email}" required="true" /></td>
+						</tr>
+						<tr>
+							<td><br /></td>
+							<td><br /></td>
+						</tr>
+						<tr>
+							<td><bk:printProperty key="admin.profile.password"/></td>
+							<td><input type="password" name="password" required="true"/></td>
+						</tr>
+						<tr>
+							<td><br /></td>
+							<td><br /></td>
+						</tr>
+						
+						<tr>
+							<td><bk:printProperty key="admin.profile.new_password"/></td>
+							<td><input type="text" name="new_password" /></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td><input type="submit" name="refresh" value="<bk:printProperty key="admin.profile.submit_refresh"/>">
+								<input type="submit" name="submit" value="<bk:printProperty key="admin.profile.submit_submit"/>"></td>
+						</tr>
+						</table>		
+				</form>
+		</div>
+			
+	</div>
+<jsp:include page="/pages/footer.jsp"></jsp:include>
+</div>
+<jsp:include page="/pages/footer.jsp"></jsp:include>
+</body>
+</html>
